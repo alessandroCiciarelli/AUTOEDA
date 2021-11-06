@@ -36,9 +36,9 @@ if file_caricato is not None:
 
 
 	try:
-	    with st.beta_expander("VISUALIZZA DATASET"):
+	    with st.expander("VISUALIZZA DATASET"):
 	        st.write(dataframe)
-	    with st.beta_expander("STATISICA DI BASE"):
+	    with st.expander("STATISICA DI BASE"):
 	        st.write(dataframe.describe())
 	except:
 	    print("")
